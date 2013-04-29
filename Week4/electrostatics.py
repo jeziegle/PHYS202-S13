@@ -6,5 +6,5 @@ def pointPotential(x , y, q, posx, posy):
 
 def dipolePotential(x, y, q, d):
     """Finds potential at x and y due to a dipole a distance d separated"""
-    v = pointPotential(x, y, q, -d*.5, 0) + pointPotential(x, y, -q, d*.5, 0)
+    v = pointPotential(x, y, q, 0, -d*.5) + pointPotential(x, y, -q, 0, d*.5)
     return v
