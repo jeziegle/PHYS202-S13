@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       157,          7]
-NotebookDataLength[     82846,       1431]
-NotebookOptionsPosition[     82518,       1414]
-NotebookOutlinePosition[     82869,       1430]
-CellTagsIndexPosition[     82826,       1427]
+NotebookDataLength[     83151,       1438]
+NotebookOptionsPosition[     82823,       1421]
+NotebookOutlinePosition[     83174,       1437]
+CellTagsIndexPosition[     83131,       1434]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -71,43 +71,50 @@ Cell[BoxData[{
      RowBox[{"Cos", "[", 
       RowBox[{"omega", " ", "t"}], "]"}]}]}], ";"}], 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{"{", 
-    RowBox[{"approx", ",", 
-     RowBox[{
-      RowBox[{
-       RowBox[{"(", 
-        RowBox[{"180", "/", "Pi"}], ")"}], " ", 
-       RowBox[{"\[Theta]", "[", "t", "]"}]}], "/.", "sol"}]}], "}"}], ",", 
-   RowBox[{"{", 
-    RowBox[{"t", ",", "0", ",", "20"}], "}"}], ",", 
-   RowBox[{"PlotStyle", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", "Blue", "}"}], ",", 
-      RowBox[{"{", 
-       RowBox[{"Dashed", ",", "Red"}], "}"}]}], "}"}]}], ",", 
-   RowBox[{"AxesLabel", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"\"\<t (s)\>\"", ",", "\"\<\[Theta] (rad)\>\""}], "}"}]}], ",", 
-   RowBox[{"PlotRange", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{
-      RowBox[{"{", 
-       RowBox[{"0", ",", "10"}], "}"}], ",", 
+ RowBox[{
+  RowBox[{"plot", " ", "=", " ", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"approx", ",", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{"180", "/", "Pi"}], ")"}], " ", 
+         RowBox[{"\[Theta]", "[", "t", "]"}]}], "/.", "sol"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"t", ",", "0", ",", "20"}], "}"}], ",", 
+     RowBox[{"PlotStyle", "\[Rule]", 
       RowBox[{"{", 
        RowBox[{
-        RowBox[{"-", "20"}], ",", "20"}], "}"}]}], "}"}]}], ",", 
-   RowBox[{"ImageSize", "\[Rule]", 
-    RowBox[{"{", 
-     RowBox[{"500", ",", "300"}], "}"}]}]}], "]"}]}], "Input",
+        RowBox[{"{", "Blue", "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"Dashed", ",", "Red"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"AxesLabel", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"\"\<t (s)\>\"", ",", "\"\<\[Theta] (rad)\>\""}], "}"}]}], ",", 
+     RowBox[{"PlotRange", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{"0", ",", "10"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "20"}], ",", "20"}], "}"}]}], "}"}]}], ",", 
+     RowBox[{"ImageSize", "\[Rule]", 
+      RowBox[{"{", 
+       RowBox[{"500", ",", "300"}], "}"}]}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"show", 
+  RowBox[{"(", "plot", ")"}]}]}], "Input",
  CellChangeTimes->{{3.577559938195619*^9, 3.5775600098084*^9}, {
-  3.5775600499438334`*^9, 3.577560370086802*^9}}],
+  3.5775600499438334`*^9, 3.577560370086802*^9}, {3.577560640693782*^9, 
+  3.5775606514453297`*^9}}],
 
 Cell[BoxData[
- GraphicsBox[{{}, {}, 
-   {RGBColor[0, 0, 1], LineBox[CompressedData["
+ RowBox[{"show", " ", 
+  GraphicsBox[{{}, {}, 
+    {RGBColor[0, 0, 1], LineBox[CompressedData["
 1:eJwU23k4VN8fB3A72bKvgzFj7MvMXJUi96NkKZUKSaikUJEkSahvlKUIkX2p
 kGRJiUgcW9lpE6WS7JF9yfq7P//Mc545c+65n3Pc9+s8jKLT+YOn2FhYWC5z
 s7D8/zU10ImL4ZxsKN2zTvxgUPeRbHGYfAV/se9cLmkNg/W3lUFkchh+kPad
@@ -754,8 +761,8 @@ ci8JO1847/13bsadNrM6fSqOPVKeGvNHSGgbSPmaLUPxmbeG2s+fJMgyd5Qm
 dVEcuurkVD7FQRvHDL9KUHX3tER3yyFqn5lTNDEViqviPhnfX07JfW6DRGc9
 SXHKvRsxk5OUv65vVeP/xOF6qNDekj8kvFnRErE1B4c7m9yNgykuC173X5vl
 ThwKtGqWrJml7FtGf8WUwqH8F23q33fB57LDNWfLMPgfJy3DZA==
-     "]]}, 
-   {RGBColor[1, 0, 0], Dashing[{Small, Small}], LineBox[CompressedData["
+      "]]}, 
+    {RGBColor[1, 0, 0], Dashing[{Small, Small}], LineBox[CompressedData["
 1:eJwU2Xc8ld8fAHB77z2uca977XHvfVRKeT6FpIRvIUmUSApFKqM0kFJmRJmV
 SlIiJaMcKzIyExER2Xvv3/35x+u8znnO+ZzxPJ/3eV2i0/lDLixMTExunExM
 //+fHOjEQXNONGhq2WT8YVDRomh2RNEPv9F1nK68gcHm1y9Biop38fUva8OP
@@ -1398,18 +1405,18 @@ WJfSmafO+w9Tvl4ucOkXfop7vD1VlYeHSXCU7z2zooeAAMNz0/co3X8LC2IS
 qT4ZKtHddnycyl9Vnl0u1SdiPpkU60xS/c5TcG4N5d+v3smOmpoiAVftuGsf
 SelzkOD+qhkS3gXdTu/Lo/re1r0mARQH7LjRNt5fT0LpyialtXMkVBw893s7
 xR+1o7Tp/987W4rrPuRQ5/gPNHuRjA==
-     "]]}},
-  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
-  Axes->True,
-  AxesLabel->{
-    FormBox["\"t (s)\"", TraditionalForm], 
-    FormBox["\"\[Theta] (rad)\"", TraditionalForm]},
-  AxesOrigin->{0, 0},
-  ImageSize->{500, 300},
-  PlotRange->{{0, 10}, {-20, 20}},
-  PlotRangeClipping->True,
-  PlotRangePadding->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.577560371181376*^9}]
+      "]]}},
+   AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+   Axes->True,
+   AxesLabel->{
+     FormBox["\"t (s)\"", TraditionalForm], 
+     FormBox["\"\[Theta] (rad)\"", TraditionalForm]},
+   AxesOrigin->{0, 0},
+   ImageSize->{500, 300},
+   PlotRange->{{0, 10}, {-20, 20}},
+   PlotRangeClipping->True,
+   PlotRangePadding->{Automatic, Automatic}]}]], "Output",
+ CellChangeTimes->{3.577560371181376*^9, 3.577560652283368*^9}]
 }, Open  ]]
 },
 WindowSize->{740, 525},
@@ -1430,12 +1437,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[579, 22, 2809, 83, 193, "Input"],
-Cell[3391, 107, 79111, 1304, 315, "Output"]
+Cell[579, 22, 3052, 89, 208, "Input"],
+Cell[3634, 113, 79173, 1305, 317, "Output"]
 }, Open  ]]
 }
 ]
 *)
 
 (* End of internal cache information *)
-
