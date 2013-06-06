@@ -1,0 +1,8 @@
+experiment = importdata('radioactivedecay.dat')
+t = experiment.data(:,1);
+N = experiment.data(:,2);
+fun = @(A,b,x) A.*exp(b.*x)
+fittedmodel = fit(t',N',fun,'StartPoint',[15 0 15])
+
+figure(42)
+plot(t,N,'.b')
